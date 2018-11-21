@@ -3,11 +3,11 @@
 
 /* HTML and Body styles */
 html {
-    background-color: #005A9C;
-
+    background: url(night-blue-wallpapers-25264-6920847.jpg) fixed;
 }
 
 body {
+    background: url() center;
     background-color: rgb(191, 192, 191);
     width: 100%;
     margin-left: auto;
@@ -15,6 +15,8 @@ body {
     height: 100%;
     max-width: 960px;
     min-width: 640px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 h1 {
@@ -53,4 +55,11 @@ h1 {
 nav a:active,
 nav a:hover {
     color: #005A9C;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    background-color: white;
 }
