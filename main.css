@@ -4,6 +4,7 @@
 /* HTML and Body styles */
 html {
     background: url(night-blue-wallpapers-25264-6920847.jpg) fixed;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 body {
@@ -17,10 +18,23 @@ body {
     min-width: 640px;
     padding-left: 15px;
     padding-right: 15px;
+    box-shadow: rgb(88, 130, 247) 5px 0px 15px,
+    rgb(88, 130, 247) -5px 0px 15px;
 }
+/* H1 Styles */
 
 h1 {
     text-align: center;
+    font-size: 40px;
+}
+#mainH1 {
+    font-size: 55px;
+    text-shadow: rgb(88, 130, 247) 2px 2px 1px, rgba(21, 21, 21, 0.66) 5px 5px 25px;
+}
+
+/* Article Styles */
+article{
+    font-size: 17.5px;
 }
 
 /* Navigation Styles */
@@ -34,6 +48,7 @@ h1 {
 .hnav ul {
     width: 100%;
     padding: 0px 0px;
+    
 }
 
 .hnav li {
@@ -56,10 +71,22 @@ nav a:active,
 nav a:hover {
     color: #005A9C;
 }
+nav a:hover, nav a:active {
+    background-color:  black;
+    display: block;
+}
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    background-color: white;
+    background-color: black;
+    color: white;
+}
+
+
+
+.scrolling-box{
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
 }
