@@ -19,22 +19,32 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: rgb(88, 130, 247) 5px 0px 15px,
-    rgb(88, 130, 247) -5px 0px 15px;
+        rgb(88, 130, 247) -5px 0px 15px;
 }
+
 /* H1 Styles */
 
 h1 {
     text-align: center;
     font-size: 40px;
 }
+
 #mainH1 {
     font-size: 55px;
     text-shadow: rgb(88, 130, 247) 2px 2px 1px, rgba(21, 21, 21, 0.66) 5px 5px 25px;
 }
 
 /* Article Styles */
-article{
+article {
     font-size: 17.5px;
+}
+
+h1#secondH1 {
+    height: 65px;
+}
+
+#last {
+    height: 65px;
 }
 
 /* Navigation Styles */
@@ -48,7 +58,7 @@ article{
 .hnav ul {
     width: 100%;
     padding: 0px 0px;
-    
+
 }
 
 .hnav li {
@@ -71,22 +81,58 @@ nav a:active,
 nav a:hover {
     color: #005A9C;
 }
-nav a:hover, nav a:active {
-    background-color:  black;
+
+nav a:hover,
+nav a:active {
+    background-color: black;
     display: block;
 }
 
 /* Footer Styles */
 
+
 footer {
-    text-align: center;
     background-color: black;
-    color: white;
+    padding: 8px;
+    color: rgba(21, 17, 17, .6);
+    margin: 1px;
+}
+
+footer a {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 
 
-.scrolling-box{
-    overflow-y: scroll; 
-    scroll-behavior: smooth;
+footer p {
+    width: 33%;
+    display: block;
+    float: left;
+}
+
+footer p::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer p a:link,
+footer p a:visited {
+    text-decoration: none;
+    color: rgb(88, 130, 247);
+}
+
+footer p a:active,
+footer p a:hover {
+    text-decoration: underline;
+    color: #005A9C;
 }
