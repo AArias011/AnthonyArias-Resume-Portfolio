@@ -37,6 +37,8 @@ h1 {
 /* Article Styles */
 article {
     font-size: 17.5px;
+    padding-bottom: 10px;
+    height: 150px;
 }
 
 h1#secondH1 {
@@ -45,6 +47,30 @@ h1#secondH1 {
 
 #last {
     height: 65px;
+}
+
+article#formArticle {
+    height: 70px;
+}
+
+article#article2 {
+    height: 550px;
+}
+
+article#article3 {
+    height: 250px;
+}
+
+article#article4 {
+    height: 400px;
+}
+
+/* Aside Styles */
+aside {
+    position: relative;
+    left: 310px;
+    bottom: 150px;
+    top: 0px;
 }
 
 /* Navigation Styles */
@@ -86,6 +112,18 @@ nav a:hover,
 nav a:active {
     background-color: black;
     display: block;
+}
+
+a.workNav {
+    text-decoration: none;
+    color: #005A9C;
+    line-height: 1.8em;
+
+}
+
+article#work1 a:active,
+article#work1 a:hover {
+    color: white;
 }
 
 /* Footer Styles */
