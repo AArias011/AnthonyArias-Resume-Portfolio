@@ -3,7 +3,7 @@
 
 /* HTML and Body styles */
 html {
-    background: url(night-blue-wallpapers-25264-6920847.jpg) fixed;
+    background: url(night-blue-wallpapers-25264-6920847.jpg);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -11,15 +11,16 @@ body {
     background: url() center;
     background-color: rgb(191, 192, 191);
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
+    margin-top: 10px;
     height: 100%;
-    max-width: 960px;
-    min-width: 640px;
+    max-width: 1024px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: rgb(88, 130, 247) 5px 0px 15px,
         rgb(88, 130, 247) -5px 0px 15px;
+    display: block;
 }
 
 /* H1 Styles */
@@ -53,6 +54,10 @@ article#formArticle {
     height: 70px;
 }
 
+article#article1 {
+    height: 200px;
+}
+
 article#article2 {
     height: 550px;
 }
@@ -63,6 +68,11 @@ article#article3 {
 
 article#article4 {
     height: 400px;
+    font-size: 1.2em;
+}
+
+article#article5 {
+    font-size: 1.1em;
 }
 
 /* Aside Styles */
@@ -118,12 +128,19 @@ a.workNav {
     text-decoration: none;
     color: #005A9C;
     line-height: 1.8em;
-
+    font-size: 1.25em;
 }
 
 article#work1 a:active,
 article#work1 a:hover {
     color: white;
+}
+
+nav#extraNav {
+    text-decoration: none;
+    color: #005A9C;
+    line-height: 1.8em;
+    font-size: 1.25em;
 }
 
 /* Footer Styles */
