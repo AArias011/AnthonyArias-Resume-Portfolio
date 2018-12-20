@@ -67,12 +67,13 @@ article#article3 {
 }
 
 article#article4 {
-    height: 400px;
+    height: 220px;
     font-size: 1.2em;
 }
 
 article#article5 {
     font-size: 1.1em;
+    height: 150px;
 }
 
 /* Contact Form Styles */
@@ -144,11 +145,15 @@ article#work1 a:hover {
     color: white;
 }
 
-nav#extraNav {
+a#lastNav {
     text-decoration: none;
     color: #005A9C;
     line-height: 1.8em;
     font-size: 1.25em;
+}
+article#article5 a:active,
+article#article5 a:hover {
+    color: white;
 }
 
 /* Footer Styles */
