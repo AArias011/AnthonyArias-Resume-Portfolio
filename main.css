@@ -2,13 +2,13 @@
 
 
 /* HTML and Body styles */
+/* This code affects the html and it gives it a background of a certain image you put, there's also a font-family which changes the font of the rendered page. */
 html {
     background: url(night-blue-wallpapers-25264-6920847.jpg);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
+/* This code affects the body and gives it a certain background color, width, margin, height, max and min width, padding, display and boxshadow. */
 body {
-    background: url() center;
     background-color: rgb(191, 192, 191);
     width: 100%;
     margin: 0px auto;
@@ -24,63 +24,68 @@ body {
 }
 
 /* H1 Styles */
-
+/* This code affecs the h1 and aligns the text and gives it a certain font-size. */
 h1 {
     text-align: center;
     font-size: 40px;
 }
-
+/* This code affects the id of mainH1 and gives it a font size and text shadow. */
 #mainH1 {
     font-size: 55px;
     text-shadow: rgb(88, 130, 247) 2px 2px 1px, rgba(21, 21, 21, 0.66) 5px 5px 25px;
 }
+/* This code gives the h1 with and id of secondH1 a height of 65px; */
+h1#secondH1 {
+    height: 65px;
+}
+
 
 /* Article Styles */
+/* This code affects the article and gives it a certain font size, padding-bottom and height. */
 article {
     font-size: 17.5px;
     padding-bottom: 10px;
     height: 150px;
 }
 
-h1#secondH1 {
-    height: 65px;
-}
-
+/* This code gives the id of last a height of 65px. */
 #last {
     height: 65px;
 }
-
+/* This code gives the article with and id of formArticle a height of 70px. */
 article#formArticle {
     height: 70px;
 }
-
+/* This code gives the article with and id of article1 a height of 200px.*/
 article#article1 {
     height: 200px;
 }
-
+/* This code gives the article with and id of article2 a height of 500px.*/
 article#article2 {
     height: 550px;
 }
-
+/* This code gives the article with and id of article3 a height of 250px.*/
 article#article3 {
     height: 250px;
 }
-
+/* This code gives the article with and id of article4 a height of 220px and a font size of 1.2em. */
 article#article4 {
     height: 220px;
     font-size: 1.2em;
 }
-
+/* This code gives the article with and id of article5 a height of 150px and a font-size of 1.1em. */
 article#article5 {
     font-size: 1.1em;
     height: 150px;
 }
 
 /* Contact Form Styles */
+/* This code affects the div with a class of col-1-3 a padding and width. */
 div.col-1-3 {
     padding: .20px;
     width: 40%;
 }
+/* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
 form {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -93,19 +98,19 @@ form {
 }
 
 /* Navigation Styles */
-
+/* This code gives the pseudo class to have a clear, content and display. */
 ::after {
     clear: both;
     content: "";
     display: table;
 }
-
+/* This affects the unordered list thats in the class of hnav to have a width and padding. */
 .hnav ul {
     width: 100%;
     padding: 0px 0px;
 
 }
-
+/* This affects the lists thats in the class of hnav to have a certain list-style-type, display, width, float, text-decoration and text align. */
 .hnav li {
     list-style-type: none;
     display: block;
@@ -114,43 +119,44 @@ form {
     text-decoration: none;
     text-align: center
 }
-
+/* This code affects the hypertext link thats in the class of hnav to have a text-align, textpdecoration, width and color. */
 .hnav a {
     text-align: center;
     text-decoration: none;
     width: 100%;
     color: black;
 }
-
+/* This code makes the nav a certain color when you hover over it on the rendered page. */
 nav a:active,
 nav a:hover {
     color: #005A9C;
 }
-
+/* This code makes the nav on the rendered page to have a background color and display. */
 nav a:hover,
 nav a:active {
     background-color: black;
     display: block;
 }
-
+/* This code affects a hypertext link with the class of workNav to have a certain text-decoration, color, line height and font size. */
 a.workNav {
     text-decoration: none;
     color: #005A9C;
     line-height: 1.8em;
     font-size: 1.25em;
 }
-
+/* This code makes the hypertext links in the article with an id of work1 to turn white when you hover over them on the rendered page. */
 article#work1 a:active,
 article#work1 a:hover {
     color: white;
 }
-
+/* This code affects a hypertext link with the id of lastNav to have a text-decoration, color, line-height and font size. */
 a#lastNav {
     text-decoration: none;
     color: #005A9C;
     line-height: 1.8em;
     font-size: 1.25em;
 }
+/* This code makes the hypertext links in the article with an id of article5 to turn white when you hover over them on the rendered page. */
 article#article5 a:active,
 article#article5 a:hover {
     color: white;
@@ -158,14 +164,14 @@ article#article5 a:hover {
 
 /* Footer Styles */
 
-
+/* This code sets the footer to have a background color, padding, color and margin. */
 footer {
     background-color: black;
     padding: 8px;
     color: rgba(21, 17, 17, .6);
     margin: 1px;
 }
-
+/* This code affects the hypertext link thats in the footer to have a display, width, float and text align. */
 footer a {
     display: block;
     width: 100%;
@@ -174,31 +180,31 @@ footer a {
 }
 
 
-
+/* This code affects the paragraph thats in the footer to have a display, width, and float. */
 footer p {
     width: 33%;
     display: block;
     float: left;
 }
-
+/* This code gives the p tag thats in the footer to have a content, display and clear. */
 footer p::after {
     content: "";
     display: table;
     clear: both;
 }
-
+/* This code gives the footer a content, display and clear. */
 footer:after {
     content: "";
     clear: both;
     display: table;
 }
-
+/* This affects the hypertext link thats in the p tag thats in the footer have a text decoration and color. */
 footer p a:link,
 footer p a:visited {
     text-decoration: none;
     color: rgb(88, 130, 247);
 }
-
+/* This affects the hypertext link thats in the p tag thats in the footer have a text decoration and color when you hover over it. */
 footer p a:active,
 footer p a:hover {
     text-decoration: underline;
