@@ -1,5 +1,8 @@
 @charset "utf-8";
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* HTML and Body styles */
 /* This code affects the html and it gives it a background of a certain image you put, there's also a font-family which changes the font of the rendered page. */
@@ -14,6 +17,7 @@ h1 {
 }
 #arizona{
     width: 100%;
+    
 }
 
 
@@ -137,45 +141,30 @@ input{
 .hnav a {
     text-align: center;
     text-decoration: none;
-    width: 100%;
+    font-size: 17px;
     color:white;
     
 }
 
 
-.hnav a:hover::before{
-    visibility: visible;
-    transform: scaleX(1);
-}
-.hnav a:hover::after{
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.hnav a::before{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 12px;
-    background-color: red;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: 0.3s ease-in-out;
+/* Link hover styles */
+.line::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: width .3s;
 }
 
-.hnav a::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 12px;
-    right: 0%;
-    background-color: red;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+.line:hover::after{
+    width:100%;
+    transition: width .3s;
 }
+
+
+
+
 
 /* This code makes the nav on the rendered page to have a background color and display. */
 nav a:hover,
@@ -264,4 +253,12 @@ div.col-1-2{
 }
 div.col-3-2{
     width: 50%;
+}
+
+
+/* Grid Styles */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
