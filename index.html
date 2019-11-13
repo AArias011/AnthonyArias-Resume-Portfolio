@@ -29,55 +29,66 @@
   <header>
     <!-- This block of code sets a div to have a class of hnav and in this theres a nav with an unordered list with a list with hypertext links. -->
     <div class="hnav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="arias_skills.html">Skills</a></li>
-          <li><a href="arias_education.html">Education</a></li>
-          <li><a href="arias_extracurricular.html">Extracurricular</a></li>
-        </ul>
-      </nav>
+      <div class="text">
+        <nav>
+          <ul>
+            <li><a class="line" href="index.html">Home</a></li>
+            <li><a class="line" href="arias_skills.html">Skills</a></li>
+            <li><a class="line" href="arias_education.html">Education</a></li>
+            <li><a class="line" href="arias_extracurricular.html">Extracurricular</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <img id="arizona"src="arizona.banner.jpg">
+      </div>
     </div>
   </header>
   <!-- This is the header of my rendered page, it has an id of mainH1. -->
-  <h1 id="mainH1">Anthony Arias</h1>
+ 
 
 
   <!-- This is an h2 with an id of firstH1 and under I have an article with an id of article1. In the article I have text regarding things about myself.  -->
-  <h1 id="firstH1">About Me</h1>
-  <article id="article1">
-    <ul>
-      Hi my name is Anthony Arias and I am currently 17 years old. I love helping others, I hope to one day pay back
-      my parents for everything that they have done for me. I am dedicated to making this happen by working hard,
-      getting a great education and never giving up. When it comes to work I am hardworking, patient, I am able to
-      work great in a team and I am able to work under pressure.
-    </ul>
-    <br>
-    <ul>
-      In my personal time I like to play the guitar, video games, baseball, basketball and football. What I love the
-      most is spending time with my family and friends. To me family and friends are really important when it comes
-      to actually being happy.
-    </ul>
-  </article>
-  <!-- In this article i have an id of formArticle and a h1 of contact me with an id of formHeader. -->
-  <article id="formArticle">
-    <h1 id="formHeader">Contact Me</h1>
-  </article>
-  <!-- Contact Form -->
-  <!-- This is the code to set a contact form on my rendered page.-->
-  <div class="col-1-3">
-    <form method="POST" action="https://formspree.io/nthnarias@gmail.com">
-      <input type="email" name="email" placeholder="Your Email">
-      <br>
-      <input type="name" name="name" placeholder="Full Name">
-      <br>
-      <input type="subject" name="subject" placeholder="Subject">
-      <br>
-      <textarea name="message" placeholder="Message"></textarea>
-      <br>
-      <button type="submit">Submit</button>
-    </form>
+  <div class="row">
+      <div class="col-1-2" id="aboutMe">
+          <h1 id="firstH1">About Me</h1>
+          <article id="article1">
+             <p>
+              Hi my name is Anthony Arias and I am currently 17 years old. I love helping others, I hope to one day pay back
+              my parents for everything that they have done for me. I am dedicated to making this happen by working hard,
+              getting a great education and never giving up. When it comes to work I am hardworking, patient, I am able to
+              work great in a team and I am able to work under pressure.
+             </p>
+            <br>
+              <p>
+                In my personal time I like to play the guitar, video games, baseball, basketball and football. What I love the
+              most is spending time with my family and friends. To me family and friends are really important when it comes
+              to actually being happy.
+              </p>
+          </article>
+      </div>
+      <!-- In this article i have an id of formArticle and a h1 of contact me with an id of formHeader. -->
+      <div class="col-3-2" id="contactForm">
+          <article id="formArticle">
+              <h1 id="formHeader">Contact Me</h1>
+            </article>
+            <!-- Contact Form -->
+            <!-- This is the code to set a contact form on my rendered page.-->
+            
+              <form method="POST" action="https://formspree.io/nthnarias@gmail.com">
+                <input type="email" name="email" placeholder="Your Email">
+                <br>
+                <input type="name" name="name" placeholder="Full Name">
+                <br>
+                <input type="subject" name="subject" placeholder="Subject">
+                <br>
+                <textarea name="message" placeholder="Message"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+              </form>
+      </div>
   </div>
+  
 
   <!-- This block of code sets a hypertext link to my slack, github and my phone in my footer. It also sets an icon of each link to my footer. -->
   <footer>

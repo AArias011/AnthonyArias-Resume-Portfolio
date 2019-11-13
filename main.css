@@ -4,35 +4,24 @@
 /* HTML and Body styles */
 /* This code affects the html and it gives it a background of a certain image you put, there's also a font-family which changes the font of the rendered page. */
 html {
-    background: url(night-blue-wallpapers-25264-6920847.jpg);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-/* This code affects the body and gives it a certain background color, width, margin, height, max and min width, padding, display and boxshadow. */
-body {
-    background-color: rgb(191, 192, 191);
-    width: 100%;
-    margin: 0px auto;
-    margin-top: 10px;
-    height: 100%;
-    max-width: 1024px;
-    min-width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: rgb(88, 130, 247) 5px 0px 15px,
-        rgb(88, 130, 247) -5px 0px 15px;
-    display: block;
-}
-
 /* H1 Styles */
 /* This code affecs the h1 and aligns the text and gives it a certain font-size. */
 h1 {
     text-align: center;
     font-size: 40px;
 }
+#arizona{
+    width: 100%;
+}
+
+
+
 /* This code affects the id of mainH1 and gives it a font size and text shadow. */
 #mainH1 {
     font-size: 55px;
-    text-shadow: rgb(88, 130, 247) 2px 2px 1px, rgba(21, 21, 21, 0.66) 5px 5px 25px;
+     position: absolute;
 }
 /* This code gives the h1 with and id of secondH1 a height of 65px; */
 h1#secondH1 {
@@ -41,6 +30,11 @@ h1#secondH1 {
 
 
 /* Article Styles */
+#aboutMe{
+    text-align: center;
+}
+
+
 /* This code affects the article and gives it a certain font size, padding-bottom and height. */
 article {
     font-size: 17.5px;
@@ -58,7 +52,11 @@ article#formArticle {
 }
 /* This code gives the article with and id of article1 a height of 200px.*/
 article#article1 {
-    height: 200px;
+    height: 300px;
+    width: 40%;
+    margin-left: auto;
+    margin-right:auto;
+
 }
 /* This code gives the article with and id of article2 a height of 500px.*/
 article#article2 {
@@ -80,11 +78,6 @@ article#article5 {
 }
 
 /* Contact Form Styles */
-/* This code affects the div with a class of col-1-3 a padding and width. */
-div.col-1-3 {
-    padding: .20px;
-    width: 40%;
-}
 /* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
 form {
     -webkit-box-sizing: border-box;
@@ -92,18 +85,38 @@ form {
     display: block;
     margin-top: 0em; 
     position: relative;
-    left: 430px;
+    left: 300px;
     bottom: 10px;
     height: 200px;
+   
+}
+
+#contactForm{
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    border:none;
+    background-color:antiquewhite;
 }
 
 /* Navigation Styles */
 /* This code gives the pseudo class to have a clear, content and display. */
+
+.text {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 40%;
+    
+  }
+
 ::after {
     clear: both;
     content: "";
     display: table;
 }
+
 /* This affects the unordered list thats in the class of hnav to have a width and padding. */
 .hnav ul {
     width: 100%;
@@ -117,25 +130,58 @@ form {
     width: 25%;
     float: left;
     text-decoration: none;
-    text-align: center
+    text-align: center;
+    
 }
 /* This code affects the hypertext link thats in the class of hnav to have a text-align, textpdecoration, width and color. */
 .hnav a {
     text-align: center;
     text-decoration: none;
     width: 100%;
-    color: black;
+    color:white;
+    
 }
-/* This code makes the nav a certain color when you hover over it on the rendered page. */
-nav a:active,
-nav a:hover {
-    color: #005A9C;
+
+
+.hnav a:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
 }
+.hnav a:hover::after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.hnav a::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 12px;
+    background-color: red;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+
+.hnav a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 12px;
+    right: 0%;
+    background-color: red;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
 /* This code makes the nav on the rendered page to have a background color and display. */
 nav a:hover,
 nav a:active {
-    background-color: black;
-    display: block;
+    /* background-color: grey; */
+    display: inline;
 }
 /* This code affects a hypertext link with the class of workNav to have a certain text-decoration, color, line height and font size. */
 a.workNav {
@@ -209,4 +255,13 @@ footer p a:active,
 footer p a:hover {
     text-decoration: underline;
     color: #005A9C;
+}
+
+/* Grid Format */
+div.col-1-2{
+    text-align: center;
+    
+}
+div.col-3-2{
+    width: 50%;
 }
