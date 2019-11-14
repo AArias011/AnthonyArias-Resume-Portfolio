@@ -89,7 +89,7 @@ form {
     display: block;
     margin-top: 0em; 
     position: relative;
-    left: 300px;
+    /* left: 300px; */
     bottom: 10px;
     height: 200px;
    
@@ -154,12 +154,12 @@ input{
     width: 0;
     height: 1.5px;
     background: #fff;
-    transition: width .3s;
+    transition: width .5s;
 }
 
 .line:hover::after{
     width:100%;
-    transition: width .3s;
+    transition: width .5s;
 }
 
 
@@ -257,8 +257,25 @@ div.col-3-2{
 
 
 /* Grid Styles */
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-column-gap: 20px;
+}
+
+.grid > div {
     
+    padding:1em;
+    text-align:center;
+    border-radius:10px;
+}
+
+hr{
+    display: inline;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
