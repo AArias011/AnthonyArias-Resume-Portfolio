@@ -261,14 +261,20 @@ div.col-3-2{
     display:grid;
     grid-template-columns: 1fr 1fr;   
     grid-column-gap: 20px;
+    
 }
 
 .grid > div {
-    
     padding:1em;
     text-align:center;
     border-radius:10px;
 }
+
+.line{
+    border-right: solid 5px red;
+    
+}
+
 
 hr{
     display: inline;
